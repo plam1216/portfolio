@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,
+body {
+    font-family: 'Roboto Slab', serif;
+    color: black;
+}
+
+/* ---------- NAV ---------- */
+.nav {
+    background-color: rgb(154, 156, 159);
+    /* background-color: white; */
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+.nav-link {
+    color: black;
+}
+
+/* ---------- HOME ---------- */
+#home {
+    display: flex;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    height: 60vh;
+}
+
+/* #home>div>div>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+#home>div>div>div>section>p {
+    font-size: 1.25rem;
+}
+
+#pfp {
+    max-width: 225px;
+    max-height: 275px;
+    border-radius: 8px;
+}
+
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+/* ---------- PROJECTS ---------- */
+#projects {
+    background-color: rgb(154, 156, 159);
+    padding: 20px 0 20px 0;
+    font-size: 1.1rem;
+}
+
+#projects>.container>.row {
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.project-img {
+    border: 2px solid black;
+}
+
+.project-desc {
+    padding-top: 10px;
+}
+
+.project-links {
+    color:rgb(235, 235, 235);
+}
+
+.tech-used {
+    max-width: 40px;
+    margin: 10px;
+}
+
+/* ---------- ABOUT ---------- */
+#about {
+    /* background-color: rgb(200, 200, 200); */
+    padding: 30px 0 30px 0;
+    display: flex;
+    height: 85vh;
+    font-size: 1.2rem;
+}
+
+/* #about>div>div>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.cred-links {
+    color: rgb(170, 0, 255);
+}
+
+#skills>img {
+    max-width: 50px;
+    margin: 10px;
+    margin-left: 0;
+}
+
+/* ---------- CONTACT ---------- */
+#contact {
+    text-align: center;
+    padding-bottom: 25px;
+    margin-top: 25px;
+}
+
+#contact>input {
+    width: 30vw;
+    padding: 5px;
+    margin: 10px;
+}
+
+#contact>textarea {
+    width: 30vw;
+    padding: 5px;
+}
+
+#contact>#send>input {
+    margin-top: 10px;
+    width: 8vw;
+}
+
+label {
+    display: block;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background-color: rgb(154, 156, 159);
+    color: white;
+    height: 10vh;
+    width: 100%;
+    bottom: 0;
+    padding-top: 10px;
+}
+
+footer>div>div>div {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons {
+    max-width: 30px;
+    margin: 15px;
+}
