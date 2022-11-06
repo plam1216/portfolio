@@ -1,34 +1,10 @@
 import React from 'react'
 
 const Projects = () => {
-  // const projects = [
-  //   {
-  //     proj1:
-  //       ["https://imgur.com/Gx82YcS.jpg",
-  //         "https://imgur.com/tZz31s5.jpg",
-  //         "https://imgur.com/jU4hSfi.jpg",
-  //         "https://imgur.com/oZxQxJU.jpg"]
-  //   },
-  //   {
-  //     proj2:
-  //       ["https://imgur.com/vdWwdfs.jpg",
-  //         "https://imgur.com/tZz31s5.jpg",
-  //         "https://imgur.com/jU4hSfi.jpg",
-  //         "https://imgur.com/oZxQxJU.jpg"]
-  //   },
-  //   {
-  //     proj3:
-  //       ["https://imgur.com/Gx82YcS.jpg",
-  //         "https://imgur.com/tZz31s5.jpg",
-  //         "https://imgur.com/jU4hSfi.jpg",
-  //         "https://imgur.com/oZxQxJU.jpg"]
-  //   }
-  // ]
-
   return (
     <div id="projects">
       <div className="container">
-        <h2>Projects</h2>
+        <h1>Projects</h1>
 
         <hr />
         
@@ -41,7 +17,7 @@ const Projects = () => {
             <section>
               <h3>BeatStars</h3>
               <p>
-                <a href="https://github.com/plam1216/beatstore">GitHub</a> | <a href="https://beatstore-pl.herokuapp.com/">App</a>
+                <a className="project-links" href="https://github.com/plam1216/beatstore">GitHub</a> | <a className="project-links" href="https://beatstore-pl.herokuapp.com/">App</a>
               </p>
               <p>
                 A music marketplace where users can buy and sell beats.
@@ -73,7 +49,7 @@ const Projects = () => {
             <section>
               <h3>500px</h3>
               <p>
-                <a href="https://github.com/plam1216/500px">GitHub</a> | <a href="https://peter-lam-500px.herokuapp.com/">App</a>
+                <a className="project-links" href="https://github.com/plam1216/500px">GitHub</a> | <a className="project-links" href="https://peter-lam-500px.herokuapp.com/">App</a>
               </p>
               <p>
                 A mobile friendly CRUD application that allows users to upload photo albums.
@@ -107,10 +83,10 @@ const Projects = () => {
             <section>
               <h3>Spotify Search</h3>
               <p>
-                <a href="https://github.com/plam1216/Spotify_Search">GitHub</a> | <a href="https://spotify-search-pl.netlify.app/">App</a>
+                <a className="project-links" href="https://github.com/plam1216/Spotify_Search">GitHub</a> | <a className="project-links" href="https://spotify-search-pl.netlify.app/">App</a>
               </p>
               <p>
-                A mobile friendly site that using Spotify's API to display an artist's discography
+                A mobile friendly site that uses Spotify's API to display an artist's discography.
               </p>
             </section>
 
