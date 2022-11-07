@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-const Contact = () => {
+const Contact = ({ id }) => {
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -16,20 +16,20 @@ const Contact = () => {
     };
 
     return (
-        // <div className="container">
-        <form id="contact" ref={form} onSubmit={sendEmail}>
-            <h2>Let's get in touch!</h2>
-            <label>Name</label>
-            <input type="text" name="user_name" />
-            <label>Email</label>
-            <input type="email" name="user_email" />
-            <label>Message</label>
-            <textarea name="message" />
-            <div id="send">
-                <input type="submit" value="Send" />
-            </div>
-        </form >
-        // </div>
+        <div className="container">
+            <form id={id} ref={form} onSubmit={sendEmail}>
+                <h1>Let's get in touch!</h1>
+                <label>Name</label>
+                <input type="text" name="user_name" />
+                <label>Email</label>
+                <input type="email" name="user_email" />
+                <label>Message</label>
+                <textarea name="message" />
+                <div id="send">
+                    <input type="submit" value="Send" />
+                </div>
+            </form >
+        </div>
     );
 };
 

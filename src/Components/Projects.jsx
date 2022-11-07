@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Projects = () => {
+const Projects = ({id}) => {
   return (
-    <div id="projects">
-      <div className="container">
+    <div id="projects-section">
+      <div className="container" id={id}>
         <h1>Projects</h1>
 
         <hr />

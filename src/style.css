@@ -1,3 +1,10 @@
+:root {
+    --main-text: #000000;
+    --secondary-text: #4e474e;
+    --section-color: #94a8b3;
+    --section-alternate: #dcd3c9;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,16 +13,17 @@
 html,
 body {
     font-family: 'Roboto Slab', serif;
-    color: black;
+    color: var(--main-text);
 }
 
 /* ---------- NAV ---------- */
-.nav {
-    background-color: rgb(154, 156, 159);
-    /* background-color: white; */
+nav {
+    background-color: var(--section-color);
+    position: sticky;
     margin: 0;
     top: 0;
-    left: 0;
+    z-index: 10;
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
 }
 
 .nav-link {
@@ -26,23 +34,20 @@ body {
 #home {
     display: flex;
     align-items: center;
-    padding: 20px 0 20px 0;
-    height: 60vh;
+    height: 100vh;
 }
-
-/* #home>div>div>div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
 #home>div>div>div>section>p {
     font-size: 1.25rem;
 }
 
+#name {
+    color: var(--main-text);
+}
+
 #pfp {
-    max-width: 225px;
-    max-height: 275px;
+    max-width: 300px;
+    max-height: 350px;
     border-radius: 8px;
 }
 
@@ -52,14 +57,76 @@ body {
     align-items: flex-end;
 }
 
-/* ---------- PROJECTS ---------- */
-#projects {
-    background-color: rgb(154, 156, 159);
+/* ---------- ABOUT ---------- */
+#about-section {
     padding: 20px 0 20px 0;
-    font-size: 1.1rem;
+    background-color: var(--section-alternate);
+    font-size: 1.25rem;
+    height: 100vh;
 }
 
-#projects>.container>.row {
+.cred-links {
+    color: rgb(113, 52, 255);
+}
+
+.myDIV {
+    text-decoration: underline;
+}
+.hide {
+    display: none;
+}
+
+.myDIV:hover+.hide {
+    display: inline-block;
+}
+
+#music-credits {
+    position: absolute;
+    height: 200px;
+    margin-left: 550px;
+}
+
+#apple {
+    position: absolute;
+    height: 500px;
+    margin-left: 450px;
+    margin-top: -50px;
+}
+
+#spotify {
+    position: absolute;
+    height: 500px;
+    margin-left: 350px;
+    margin-top: -50px;
+}
+
+#studio-pic {
+    position: absolute;
+    height: 300px;
+    margin-left: 250px;
+}
+
+#city {
+    position: absolute;
+    height: 300px;
+    margin-left: 500px;
+}
+
+#skills>img {
+    max-width: 50px;
+    margin: 10px;
+    margin-left: 0;
+}
+
+/* ---------- PROJECTS ---------- */
+#projects-section {
+    background-color: var(--section-alternate);
+    padding: 20px 0 20px 0;
+    font-size: 1.1rem;
+    height: 200vh;
+}
+
+#projects-section>.container>.row {
     margin-top: 15px;
     padding: 10px;
 }
@@ -73,7 +140,8 @@ body {
 }
 
 .project-links {
-    color:rgb(235, 235, 235);
+    color: rgb(235, 235, 235);
+    color: var(--secondary-text);
 }
 
 .tech-used {
@@ -81,36 +149,19 @@ body {
     margin: 10px;
 }
 
-/* ---------- ABOUT ---------- */
-#about {
-    /* background-color: rgb(200, 200, 200); */
-    padding: 30px 0 30px 0;
-    display: flex;
-    height: 85vh;
-    font-size: 1.2rem;
-}
-
-/* #about>div>div>div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
-.cred-links {
-    color: rgb(170, 0, 255);
-}
-
-#skills>img {
-    max-width: 50px;
-    margin: 10px;
-    margin-left: 0;
-}
-
 /* ---------- CONTACT ---------- */
+#contact-section {
+    /* background-color: var(--section-alternate); */
+    /* padding: 20px 0 20px 0; */
+    font-size: 1.1rem;
+    height: 100vh;
+}
 #contact {
-    text-align: center;
-    padding-bottom: 25px;
-    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 #contact>input {
@@ -121,6 +172,7 @@ body {
 
 #contact>textarea {
     width: 30vw;
+    height: 20vh;
     padding: 5px;
 }
 
@@ -135,8 +187,8 @@ label {
 
 /* ---------- FOOTER ---------- */
 footer {
-    background-color: rgb(154, 156, 159);
-    color: white;
+    background-color: var(--section-color);
+    color: var(--main-text);
     height: 10vh;
     width: 100%;
     bottom: 0;

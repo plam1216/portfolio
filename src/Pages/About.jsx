@@ -1,46 +1,84 @@
 import React from 'react'
 
-const About = () => {
+const About = ({ id }) => {
   return (
-      <div id="about" className="container-fluid justify-content-center align-items-center">
-        <div className="row">
-          <div className="col-6 offset-md-1">
+    <div id="about-section">
+      <div className="container" id={id}>
+        <h1>About Me</h1>
+
+        <hr />
+
+        <div className="row" id="info">
+          <div className="col-7">
             <section>
               <p>
-                Hi, I'm Peter Lam, an NYC based software engineer.
+                Prior to software engineering I was an&nbsp;
+                <span class="myDIV col-8">audio engineer and music producer</span>
+                <span class="hide">
+                  <img id="music-credits" src="https://imgur.com/4djK8Kl.jpg" alt="music-credits" />
+                </span>.
               </p>
 
               <p>
-                Prior to transitioning into software engineering I was a freelance <a className="cred-links" href="https://peterlam.beatstars.com/about">audio engineer</a> and <a className="cred-links" href="https://peterlam.beatstars.com/">music producer</a>. I had some work featured on Apple Music, Spotify, and Tidal playlists.
+                I had some work featured on&nbsp;
+                <span class="myDIV col-8">Apple</span>
+                <span class="hide">
+                  <img id="apple" src="https://imgur.com/48U9EvI.gif" alt="playlists" />
+                </span>
+                &nbsp;and&nbsp;
+                <span class="myDIV col-8">Spotify</span>
+                <span class="hide">
+                  <img id="spotify" src="https://imgur.com/bkL48Rm.gif" alt="playlists" />
+                </span>
+                &nbsp;playlists.
               </p>
 
-              <p>My change in career paths was driven by my desire to find ways to merge art and tech to develop products that can help artists throughout their creative process.
+              <p>
+                My change in career paths was driven by my desire to find ways to merge art and tech to develop products that can help artists throughout their creative process.
               </p>
 
-              <p>Here are some of the skills I've been using while coding:</p>
+              <p>
+                In my free time, you'll still find me in the&nbsp;
+                <span class="myDIV col-8">studio</span>
+                <span class="hide">
+                  <img id="studio-pic" src="https://imgur.com/xo2eFxA.jpg" alt="studio-pic" />
+                </span>
+                &nbsp;working on music or&nbsp;
 
-              <div id="skills">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="icon" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" alt="icon" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="icon" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="icon" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="icon" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="icon" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="icon" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="icon" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="icon" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" alt="icon" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="icon" />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="icon" />
-              </div>
+                <span class="myDIV">exploring the city</span>
+                <span class="hide">
+                  <img id="city" src="https://imgur.com/9igGxq2.jpg" alt="city" />
+                </span>.
+              </p>
+
+
+              <br />
+              {/* <br /> */}
             </section>
           </div>
+        </div>
+        <div className="col-4">
+        </div>
 
-          {/* <div className="col-4">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, amet. Reprehenderit consequatur eum accusantium aperiam blanditiis voluptatem sint ipsa facere nemo maxime, sed tenetur veritatis a doloribus sit dolores obcaecati.
-            </p>
-          </div> */}
+        <div className="row">
+
+          <p>Here are some of the coding skills I've been using for my projects:</p>
+
+          <div id="skills" className="col-6">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="icon" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" alt="icon" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="icon" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="icon" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="icon" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="icon" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="icon" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="icon" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="icon" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" alt="icon" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="icon" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="icon" />
+          </div>
+        </div>
       </div>
     </div >
   )
