@@ -9,7 +9,7 @@ const About = ({ id }) => {
         <hr />
 
         <div className="row" id="info">
-          <div className="col-7">
+          {/* <div className="col-7"> */}
             <section>
               <p>
                 Prior to software engineering I was an&nbsp;
@@ -55,16 +55,16 @@ const About = ({ id }) => {
               <br />
               {/* <br /> */}
             </section>
-          </div>
+          {/* </div> */}
         </div>
-        <div className="col-4">
-        </div>
+        {/* <div className="col-4"> */}
+        {/* </div> */}
 
         <div className="row">
 
           <p>Here are some of the coding skills I've been using for my projects:</p>
 
-          <div id="skills" className="col-6">
+          <div id="skills">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="icon" />
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" alt="icon" />
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="icon" />
