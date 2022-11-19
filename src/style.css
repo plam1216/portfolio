@@ -1,8 +1,8 @@
 :root {
     --main-text: #000000;
-    --secondary-text: #4e474e;
-    --section-color: #94a8b3;
-    --section-alternate: #dcd3c9;
+    --secondary-text: #5F6785;
+    --section-color: #917D82;
+    --section-alternate: #D1CFC1;
 }
 
 * {
@@ -65,6 +65,10 @@ nav {
     height: 100vh;
 }
 
+#about-section>.container>.row>section>p {
+    width: 50vw;
+}
+
 .cred-links {
     color: rgb(113, 52, 255);
 }
@@ -72,6 +76,7 @@ nav {
 .myDIV {
     text-decoration: underline;
 }
+
 .hide {
     display: none;
 }
@@ -82,8 +87,8 @@ nav {
 
 #music-credits {
     position: absolute;
-    height: 200px;
-    margin-left: 550px;
+    height: 180px;
+    margin-left: 575px;
 }
 
 #apple {
@@ -103,13 +108,19 @@ nav {
 #studio-pic {
     position: absolute;
     height: 300px;
-    margin-left: 250px;
+    margin-left: 225px;
+    margin-top: -200px;
 }
 
 #city {
     position: absolute;
     height: 300px;
-    margin-left: 500px;
+    margin-left: 400px;
+    margin-top: -230px;
+}
+
+#skills {
+    width: 50vw;
 }
 
 #skills>img {
@@ -151,11 +162,10 @@ nav {
 
 /* ---------- CONTACT ---------- */
 #contact-section {
-    /* background-color: var(--section-alternate); */
-    /* padding: 20px 0 20px 0; */
     font-size: 1.1rem;
     height: 100vh;
 }
+
 #contact {
     display: flex;
     flex-direction: column;
@@ -203,4 +213,96 @@ footer>div>div>div {
 .social-icons {
     max-width: 30px;
     margin: 15px;
+}
+
+
+@media only screen and (max-width: 320px) {
+
+    /* ---------- HOME ---------- */
+    #home {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        font-size: 0.8rem;
+    }
+
+    #home>div>div>div>section>p {
+        font-size: 1rem;
+    }
+
+    #pfp {
+        max-width: 240px;
+        max-height: 180px;
+        border-radius: 8px;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    /* ---------- HOME ---------- */
+    #home {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #home>div>div>div>section>p {
+        font-size: 1.25rem;
+    }
+
+    #pfp {
+        max-width: 240px;
+        max-height: 320px;
+        border-radius: 8px;
+    }
+
+    /* ---------- ABOUT ---------- */
+    #about-section {
+        font-size: 1.35rem;
+    }
+    
+    #about-section>.container>.row>section>p {
+        width: 50vw;
+    }
+    
+    #music-credits {
+        height: 165px;
+        margin-top: -30px;
+        margin-left: 200px;
+    }
+    
+    #apple {
+        margin-left: 350px;
+        margin-top: -50px;
+    }
+    
+    #spotify {
+        margin-left: 240px;
+        margin-top: -50px;
+    }
+    
+    #studio-pic {
+        height: 250px;
+        margin-left: 75px;
+    }
+    
+    #city {
+        height: 250px;
+        margin-left: 50px;
+    }
+    
+    #skills {
+        width: 60vw;
+    }
+    
+    #skills>img {
+        max-width: 60px;
+    }
+    
+    /* ---------- PROJECTS ---------- */
+    #projects-section {
+        height: 150vh;
+        font-size: 1rem;
+    }
 }
