@@ -9,7 +9,6 @@ const About = ({ id }) => {
         <hr />
 
         <div className="row" id="info">
-          {/* <div className="col-7"> */}
             <section>
               <p>
                 Prior to software engineering I was an&nbsp;
@@ -53,12 +52,8 @@ const About = ({ id }) => {
 
 
               <br />
-              {/* <br /> */}
             </section>
-          {/* </div> */}
         </div>
-        {/* <div className="col-4"> */}
-        {/* </div> */}
 
         <div className="row">
 
