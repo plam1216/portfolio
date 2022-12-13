@@ -52,7 +52,7 @@ const Projects = ({ id }) => {
             <section>
               <h3>BeatStars</h3>
               <p>
-                <a className="project-links" href="https://github.com/plam1216/beatstore">GitHub</a> | <a className="project-links" href="https://beatstore-pl.herokuapp.com/">App</a>
+                <a className="project-links" href="https://github.com/plam1216/beatstore">GitHub</a> | <a className="project-links" href="https://github.com/plam1216/beatstore">App</a>
               </p>
               <p>
                 A music marketplace where users can buy and sell beats.
