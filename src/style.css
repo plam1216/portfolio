@@ -276,8 +276,8 @@ footer>div>div>div {
 
     /* ---------- PROJECTS ---------- */
     /* #projects-section { */
-        /* height: 150vh; */
-        /* font-size: 0.95rem; */
+    /* height: 150vh; */
+    /* font-size: 0.95rem; */
     /* } */
 }
 
@@ -319,7 +319,7 @@ footer>div>div>div {
 
     /* ---------- PROJECTS ---------- */
     #projects-section {
-        height: 170vh;
+        height: 220vh;
         font-size: 0.95rem;
     }
 }
