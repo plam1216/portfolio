@@ -212,8 +212,7 @@ footer>div>div>div {
 }
 
 
-@media only screen and (max-width: 1024px) {
-
+@media (width < 1024px) {
     /* ---------- HOME ---------- */
     #home {
         display: flex;
@@ -267,21 +266,15 @@ footer>div>div>div {
     }
 
     #skills {
-        width: 60vw;
+        width: 70vw;
     }
 
     #skills>img {
-        max-width: 60px;
+        max-width: 50px;
     }
-
-    /* ---------- PROJECTS ---------- */
-    /* #projects-section { */
-    /* height: 150vh; */
-    /* font-size: 0.95rem; */
-    /* } */
 }
 
-@media only screen and (max-width: 768px) {
+@media (width < 768px) {
 
     /* ---------- HOME ---------- */
     #home {
@@ -302,29 +295,29 @@ footer>div>div>div {
 
     /* ---------- ABOUT ---------- */
     #about-section {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
     .myDIV:hover+.hide {
         display: none;
     }
 
-    #skills {
-        width: 60vw;
-    }
-
     #skills>img {
-        max-width: 45px;
+        max-width: 35px;
     }
 
     /* ---------- PROJECTS ---------- */
     #projects-section {
         height: 220vh;
-        font-size: 0.95rem;
+        font-size: 0.75rem;
+    }
+
+    .languages {
+        display: none;
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media (width < 320px) {
     nav {
         font-size: 0.5rem
     }
@@ -367,5 +360,19 @@ footer>div>div>div {
 
     #skills>img {
         max-width: 20px;
+    }
+
+    /* ---------- PROJECTS ---------- */
+    #projects-section {
+        height: 125vh;
+        font-size: 0.65rem;
+    }
+
+    .project-details {
+        display: none;
+    }
+
+    .languages {
+        display: none;
     }
 }
