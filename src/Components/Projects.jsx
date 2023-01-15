@@ -1,4 +1,8 @@
 import React from 'react'
+import BeatStoreVideo from '../assets/beatstore-recording.mov'
+import RoundTwoVideo from '../assets/roundtwo-recording.mov'
+import FiveHundredPxVideo from '../assets/500px-recording.mov'
+import SampleCrateVideo from '../assets/sample-crate-recording.mov'
 
 const Projects = ({ id }) => {
   return (
@@ -10,7 +14,16 @@ const Projects = ({ id }) => {
 
         <div className="row">
           <div className="col-7 animate__animated animate__fadeIn">
-            <img className="d-block w-100 project-img" src="https://imgur.com/rRFYn2x.jpg" alt="sample-crate" />
+            {/* <img className="d-block w-100 project-img" src="https://imgur.com/rRFYn2x.jpg" alt="sample-crate" /> */}
+            <video
+              controls
+              autoPlay
+              loop
+              // muted
+              className="d-block w-100 project-img"
+            >
+              <source src={SampleCrateVideo} type="video/mp4"></source>
+            </video>
           </div>
 
           <div className="col-5 project-desc">
@@ -27,7 +40,7 @@ const Projects = ({ id }) => {
                   A site where music producers can discover songs to sample.
                 </p>
                 <p>
-                  Random songs are suggested for the user to sample with an easy link for MP3 download. Users can sign-in with Google Authentication to favorite songs. Option to filter songs by genere and year and to view song metadata.
+                  Random songs are suggested for the user to sample with a link for MP3 download. Users can sign-in with Google Authentication to favorite songs. Option to filter songs by genere and year and to view song metadata.
                 </p>
                 <p>
                   Site analytics implemented to track user's site interactions via Firebase.
@@ -57,7 +70,16 @@ const Projects = ({ id }) => {
 
         <div className="row">
           <div className="col-7 animate__animated animate__fadeIn">
-            <img className="d-block w-100 project-img" src="https://imgur.com/ARdJjj7.jpg" alt="project" />
+            {/* <img className="d-block w-100 project-img" src="https://imgur.com/ARdJjj7.jpg" alt="project" /> */}
+            <video
+              controls
+              autoPlay
+              loop
+              // muted
+              className="d-block w-100 project-img"
+            >
+              <source src={RoundTwoVideo} type="video/mp4"></source>
+            </video>
           </div>
 
           <div className="col-5 project-desc">
@@ -100,7 +122,16 @@ const Projects = ({ id }) => {
 
         <div className="row">
           <div className="col-7 animate__animated animate__fadeIn">
-            <img className="d-block w-100 project-img" src="https://imgur.com/iTZ467M.jpg" alt="project" />
+            {/* <img className="d-block w-100 project-img" src="https://imgur.com/iTZ467M.jpg" alt="project" /> */}
+            <video
+              controls
+              autoPlay
+              loop
+              // muted
+              className="d-block w-100 project-img"
+            >
+              <source src={BeatStoreVideo} type="video/mp4"></source>
+            </video>
           </div>
 
           <div className="col-5 project-desc">
@@ -138,7 +169,16 @@ const Projects = ({ id }) => {
 
         <div className="row">
           <div className="col-7 animate__animated animate__fadeIn">
-            <img className="d-block w-100 project-img" src="https://imgur.com/5TnOZGR.jpg" alt="project" />
+            {/* <img className="d-block w-100 project-img" src="https://imgur.com/5TnOZGR.jpg" alt="project" /> */}
+            <video
+              controls
+              autoPlay
+              loop
+              // muted
+              className="d-block w-100 project-img"
+            >
+              <source src={FiveHundredPxVideo} type="video/mp4"></source>
+            </video>
           </div>
 
           <div className="col-5 project-desc">
