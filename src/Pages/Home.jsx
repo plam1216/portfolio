@@ -14,7 +14,7 @@ const Home = () => {
 
                             <br />
 
-                            <p>I'm a software engineer based out of NYC with a passion for finding ways to merge art and tech.
+                            <p>I'm a <span style={{color: '#2b6fb3'}}>software engineer</span> based out of NYC with a passion for finding ways to merge art and tech.
                             </p>
                         </section>
                     </div>

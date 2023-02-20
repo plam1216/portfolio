@@ -1,8 +1,10 @@
 :root {
     --main-text: #000000;
-    --secondary-text: #5F6785;
-    --section-color: #a5979b;
-    --section-alternate: #dcd7cf;
+    --secondary-text: #154b3d;
+    /* --section-color: #a5979b; */
+    --section-color: #fff;
+    /* --section-alternate: #dcd7cf; */
+    --section-alternate: #fff;
 }
 
 * {
