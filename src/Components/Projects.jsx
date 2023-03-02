@@ -3,6 +3,8 @@ import BeatStoreVideo from '../assets/beatstore-recording.mov'
 import RoundTwoVideo from '../assets/roundtwo-recording.mov'
 import FiveHundredPxVideo from '../assets/500px-recording.mov'
 import SampleCrateVideo from '../assets/sample-crate-recording.mov'
+import DisneyCloneVideo from '../assets/disney-clone-recording.mov'
+import Video from './Video'
 
 const Projects = ({ id }) => {
   return (
@@ -13,18 +15,43 @@ const Projects = ({ id }) => {
         <hr />
 
         <div className="row">
-          <div className="col-7 animate__animated animate__fadeIn">
-            {/* <img className="d-block w-100 project-img" src="https://imgur.com/rRFYn2x.jpg" alt="sample-crate" /> */}
-            <video
-              controls
-              autoPlay
-              loop
-              // muted
-              className="d-block w-100 project-img"
-            >
-              <source src={SampleCrateVideo} type="video/mp4"></source>
-            </video>
+          <Video video={DisneyCloneVideo} />
+
+          <div className="col-5 project-desc">
+            <section>
+              <div className="project-title">
+                <h3>Disney+ Clone</h3>
+                <p>
+                  <a className="project-links" href="https://github.com/plam1216/disney-clone">GitHub</a> | <a className="project-links" href="https://disney-clone-e4006.web.app/">App</a>
+                </p>
+              </div>
+
+              <div className="project-details">
+                <p>
+                  A Disney+ Clone that recommends movies based on view history.
+                </p>
+                <p>
+                  Movies are sorted by genre and franchise and upon viewing a movie it will be removed from the recommended list.
+                </p>
+              </div>
+            </section>
+
+            <hr />
+
+            <div className="languages">
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="icon" />
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="icon" />
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" alt="icon" />
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="icon" />
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="icon" />
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="icon" />
+            </div>
           </div>
+        </div>
+
+        <div className="row">
+          <Video video={SampleCrateVideo} />
+
 
           <div className="col-5 project-desc">
             <section>
@@ -53,34 +80,17 @@ const Projects = ({ id }) => {
 
             <div className="languages">
               <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="icon" />
-              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="icon" />
               <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" alt="icon" />
-              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="icon" />
               <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="icon" />
               <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="icon" />
-              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" alt="firebase" />
-              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="bootstrap" />
-              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="icon" />
-              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="icon" />
-              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="icon" />
-              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain-wordmark.svg" alt="icon" />
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" alt="icon" />
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="icon" />
             </div>
           </div>
         </div>
 
         <div className="row">
-          <div className="col-7 animate__animated animate__fadeIn">
-            {/* <img className="d-block w-100 project-img" src="https://imgur.com/ARdJjj7.jpg" alt="project" /> */}
-            <video
-              controls
-              autoPlay
-              loop
-              // muted
-              className="d-block w-100 project-img"
-            >
-              <source src={RoundTwoVideo} type="video/mp4"></source>
-            </video>
-          </div>
+          <Video video={RoundTwoVideo} />
 
           <div className="col-5 project-desc">
             <section>
@@ -109,30 +119,16 @@ const Projects = ({ id }) => {
             <div className="languages">
               <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="icon" />
               <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" alt="icon" />
-              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" alt="icon" />
               <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="icon" />
               <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="icon" />
               <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg" alt="firebase" />
               <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="bootstrap" />
-              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="icon" />
-              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="icon" />
             </div>
           </div>
         </div>
 
         <div className="row">
-          <div className="col-7 animate__animated animate__fadeIn">
-            {/* <img className="d-block w-100 project-img" src="https://imgur.com/iTZ467M.jpg" alt="project" /> */}
-            <video
-              controls
-              autoPlay
-              loop
-              // muted
-              className="d-block w-100 project-img"
-            >
-              <source src={BeatStoreVideo} type="video/mp4"></source>
-            </video>
-          </div>
+          <Video video={BeatStoreVideo} />
 
           <div className="col-5 project-desc">
             <section>
@@ -168,18 +164,7 @@ const Projects = ({ id }) => {
         </div>
 
         <div className="row">
-          <div className="col-7 animate__animated animate__fadeIn">
-            {/* <img className="d-block w-100 project-img" src="https://imgur.com/5TnOZGR.jpg" alt="project" /> */}
-            <video
-              controls
-              autoPlay
-              loop
-              // muted
-              className="d-block w-100 project-img"
-            >
-              <source src={FiveHundredPxVideo} type="video/mp4"></source>
-            </video>
-          </div>
+          <Video video={FiveHundredPxVideo} />
 
           <div className="col-5 project-desc">
             <section>
@@ -217,7 +202,7 @@ const Projects = ({ id }) => {
           </div>
         </div>
 
-        <div className="row">
+        {/* <div className="row">
           <div className="col-7 animate__animated animate__fadeIn">
             <img className="d-block w-100 project-img" src="https://imgur.com/xy0CFkk.jpg" alt="project" />
           </div>
@@ -248,7 +233,7 @@ const Projects = ({ id }) => {
               <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="icon" />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

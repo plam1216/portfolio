@@ -15,7 +15,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="col s1 offset-md-3">
-            © 2022 Peter Lam
+            © 2023 Peter Lam
           </div>
         </div>
       </div>
