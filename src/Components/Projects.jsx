@@ -4,6 +4,7 @@ import RoundTwoVideo from '../assets/roundtwo-recording.mov'
 import FiveHundredPxVideo from '../assets/500px-recording.mov'
 import SampleCrateVideo from '../assets/sample-crate-recording.mov'
 import DisneyCloneVideo from '../assets/disney-clone-recording.mov'
+import SpotifyAnalysisVideo from '../assets/spotify-analysis-recording.mov'
 import Video from './Video'
 
 const Projects = ({ id }) => {
@@ -13,6 +14,49 @@ const Projects = ({ id }) => {
         <h1>Projects</h1>
 
         <hr />
+
+        <div className="row">
+          <Video video={SpotifyAnalysisVideo} />
+
+          <div className="col-5 project-desc">
+            <section>
+              <div className="project-title">
+                <h3>Spotify Analysis</h3>
+                <p>
+                  <a className="project-links" href="https://github.com/plam1216/spotify-analysis">GitHub</a> | <a className="project-links" href="https://spotify-analysis-af539.web.app/">App</a>
+                </p>
+              </div>
+
+              <div className="project-details">
+                <p>
+                  A site that analyzes songs from top playlists on Spotify.
+                </p>
+
+                <p>
+                  Average statistics of a Playlist's danceability, duration, energy, tempo, and loudness are calculated to help understand trends among songs within the playlist.
+                </p>
+
+                <p>
+                  Data is pulled from Spotify using &nbsp;
+                  <a href="https://github.com/thelinmichael/spotify-web-api-node#usage">
+                    Spotify-Web-API.
+                  </a>
+                </p>
+              </div>
+            </section>
+
+            <hr />
+
+            <div className="languages">
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="icon" />
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="icon" />
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" />
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="icon" />
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="icon" />
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="icon" />
+            </div>
+          </div>
+        </div>
 
         <div className="row">
           <Video video={DisneyCloneVideo} />
