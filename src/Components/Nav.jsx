@@ -62,7 +62,7 @@ const Nav = () => {
         </li>
 
         <li className="nav-item">
-          <a className="nav-link" href="https://drive.google.com/file/d/1_DIo-kO-hvJ_HeoQg1jdrjxzvgeg3LuL/view?usp=sharing">Resume</a>
+          <a className="nav-link" href="https://drive.google.com/file/d/1dkUvbexbtAzKOTVyjRXNKFYBeub60Nxs/view?usp=sharing">Resume</a>
         </li>
       </ul>
     </nav>
