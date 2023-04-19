@@ -4,6 +4,7 @@ import RoundTwoVideo from '../assets/roundtwo-recording.mov'
 import FiveHundredPxVideo from '../assets/500px-recording.mov'
 import SampleCrateVideo from '../assets/sample-crate-recording.mov'
 import DisneyCloneVideo from '../assets/disney-clone-recording.mov'
+import JobPlayVideo from '../assets/jobplay-recording.mov'
 import SpotifyAnalysisVideo from '../assets/spotify-analysis-recording.mov'
 import Video from './Video'
 
@@ -50,7 +51,63 @@ const Projects = ({ id }) => {
             <div className="languages">
               <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="icon" />
               <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="icon" />
-              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" alt="icon"/>
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" alt="icon" />
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="icon" />
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="icon" />
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="icon" />
+            </div>
+          </div>
+        </div>
+
+        {/* JobPlay */}
+        <div className="row">
+          <div
+            className="col-7 animate__animated animate__fadeIn"
+            style={{ height: "392px" }}
+          >
+            <video
+              controls
+              autoPlay
+              loop
+              // muted
+              className="d-block w-100 project-img"
+              style={{ height: "100%" }}
+            >
+              <source src={JobPlayVideo} type="video/mp4"></source>
+            </video>
+          </div>
+
+          <div className="col-5 project-desc">
+            <section>
+              <div className="project-title">
+                <h3>JobPlay</h3>
+                <p>
+                  <a className="project-links" href="https://github.com/luisdaniel0/Jobplay">GitHub</a> | <a className="project-links" href="https://job-play.netlify.app/">App</a>
+                </p>
+              </div>
+
+              <div className="project-details">
+                <p>
+                  A mobile site that gamifies the job application process.
+                </p>
+
+                <p>
+                  JobPlay was developed with a team of 5 developers and 3 UX/UI designers during a 3 day hackathon. The idea was to gamify the job application process for users.
+                </p>
+
+                <p>
+                  Users can track the jobs they have applied to, skills they learned, and events they attended and receive medals as they continue to add more entries.
+                </p>
+              </div>
+            </section>
+
+            <hr />
+
+            <div className="languages">
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="icon" />
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" alt="icon" />
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="icon" />
+              <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="icon" />
               <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="icon" />
               <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="icon" />
               <img className="tech-used" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="icon" />
